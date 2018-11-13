@@ -1,0 +1,16 @@
+@import '../../../sass/variables';
+
+.task-list {
+  background-color: $gray-600;
+  padding: 1rem 0.5rem;
+  .task-list-container {
+    background-color: $gray;
+    padding: 0.5rem;
+    border-radius: 2px;
+    .task-header {
+      font-weight: $font-wight-bold;
+    }
+    .task-content {
+    }
+  }
+}

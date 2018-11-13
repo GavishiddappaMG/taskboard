@@ -1,0 +1,7 @@
+@import '../../../sass/variables';
+.task-list-wrapper {
+  background-color: $gray-600;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: calc(100%/5) calc(100%/5) calc(100%/5) calc(100%/5) calc(100%/5);
+}

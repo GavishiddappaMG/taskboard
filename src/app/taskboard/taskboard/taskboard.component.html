@@ -8,7 +8,7 @@
         <div cdkDropList #backlog1List="cdkDropList" [cdkDropListData]="backlog1" [cdkDropListConnectedTo]="[todoList, inProcessList, backlog2List, completedList]"
           class="drop-list" (cdkDropListDropped)="drop($event)">
           <div class="list-box" *ngFor="let item of backlog1" cdkDrag>
-            <app-card [title]="item.title" [flag]="item.flag" [status]="item.status" [description]="item.description"></app-card>
+            <app-card [title]="item.title" [flag]="item.flag" [color]="item.color" [description]="item.description"></app-card>
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@
         <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todo" [cdkDropListConnectedTo]="[backlog1List, inProcessList, backlog2List, completedList]"
           class="drop-list" (cdkDropListDropped)="drop($event)">
           <div class="list-box" *ngFor="let item of todo" cdkDrag>
-            <app-card [title]="item.title" [flag]="item.flag" [status]="item.status" [description]="item.description"></app-card>
+            <app-card [title]="item.title" [flag]="item.flag" [color]="item.color" [description]="item.description"></app-card>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
         <div cdkDropList #inProcessList="cdkDropList" [cdkDropListData]="inProcess" [cdkDropListConnectedTo]="[todoList, backlog1List, backlog2List, completedList]"
           class="drop-list" (cdkDropListDropped)="drop($event)">
           <div class="list-box" *ngFor="let item of inProcess" cdkDrag>
-            <app-card [title]="item.title" [flag]="item.flag" [status]="item.status" [description]="item.description"></app-card>
+            <app-card [title]="item.title" [flag]="item.flag" [color]="item.color" [description]="item.description"></app-card>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
         <div cdkDropList #backlog2List="cdkDropList" [cdkDropListData]="backlog2" [cdkDropListConnectedTo]="[todoList, backlog1List, inProcessList, completedList]"
           class="drop-list" (cdkDropListDropped)="drop($event)">
           <div class="list-box" *ngFor="let item of backlog2" cdkDrag>
-            <app-card [title]="item.title" [flag]="item.flag" [status]="item.status" [description]="item.description"></app-card>
+            <app-card [title]="item.title" [flag]="item.flag" [color]="item.color" [description]="item.description"></app-card>
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@
         <div cdkDropList #completedList="cdkDropList" [cdkDropListData]="completed" [cdkDropListConnectedTo]="[todoList, backlog1List, inProcessList, backlog2List]"
           class="drop-list" (cdkDropListDropped)="drop($event)">
           <div class="list-box" *ngFor="let item of completed" cdkDrag>
-            <app-card [title]="item.title" [flag]="item.flag" [status]="item.status" [description]="item.description"></app-card>
+            <app-card [title]="item.title" [flag]="item.flag" [color]="item.color" [description]="item.description"></app-card>
           </div>
         </div>
       </div>

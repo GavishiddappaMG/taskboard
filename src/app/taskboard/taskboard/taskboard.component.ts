@@ -13,19 +13,19 @@ export class TaskboardComponent implements OnInit {
       title: 'Responsive bug',
       description: 'Etiam porta sem malesuada magna mollis euismod.',
       flag: true,
-      status: 'active'
+      color: 'green'
     },
     {
       title: 'Travel checklist',
       description: 'Curabitur blandit tempus porttitor.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Budget review',
       description: 'Cras justo odio, dapibus ac facilisis in, egestas eget quam.',
       flag: false,
-      status: ''
+      color: ''
     },
   ];
   todo = [
@@ -33,49 +33,49 @@ export class TaskboardComponent implements OnInit {
       title: 'QA Testing',
       description: 'Etiam porta sem malesuada magna mollis euismod.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Layout design',
       description: 'Etiam porta sem malesuada magna mollis euismod.',
       flag: true,
-      status: 'in-active'
+      color: 'red'
     },
     {
       title: 'Fix navigation menu',
       description: 'Sed posuere consectetur est at lobortis. Morbi leo risus, portaac consectetur ac, vestibulum at eros.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Update Bootstrap 4',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: true,
-      status: 'active'
+      color: 'green'
     },
     {
       title: 'Run build tools',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'List article ideas',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: true,
-      status: 'in-active'
+      color: 'red'
     },
     {
       title: 'Reactjs fixes',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Impelement SSL',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
   ];
   inProcess = [
@@ -83,36 +83,36 @@ export class TaskboardComponent implements OnInit {
       title: 'QOS Assessment',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Schedule new tasks',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-      flag: false, status: ''
+      flag: false, color: ''
     },
     {
       title: 'Add dashboard varients',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: true,
-      status: 'active'
+      color: 'green'
     },
     {
-      title: 'Extended status scheme support',
+      title: 'Extended color scheme support',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Merge unit test',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Test final version',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
   ];
   backlog2 = [
@@ -120,43 +120,43 @@ export class TaskboardComponent implements OnInit {
       title: 'Integrate Angular 4',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: true,
-      status: 'active'
+      color: 'green'
     },
     {
       title: 'Additional fields',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Draggable taks board',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Setup CI server',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: true,
-      status: 'active'
+      color: 'green'
     },
     {
       title: 'Assign new tasks',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Contack Administrator',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: true,
-      status: 'in-active'
+      color: 'red'
     },
     {
       title: 'Commit changes',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
   ];
 
@@ -165,30 +165,30 @@ export class TaskboardComponent implements OnInit {
       title: 'Store new files',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Build landing page',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     },
     {
       title: 'Setup basic layout',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: true,
-      status: 'active'
+      color: 'green'
     },
     {
       title: 'Graphical fixes',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-      flag: false, status: ''
+      flag: false, color: ''
     },
     {
       title: 'Email Alerts',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
       flag: false,
-      status: ''
+      color: ''
     }
   ];
 

@@ -21,14 +21,4 @@
       right: 4px;
       top: -4px;
     }
-    ::ng-deep .in-active {
-      mat-icon {
-        color: red;
-      }
-    }
-    ::ng-deep .active {
-      mat-icon {
-        color: green;
-      }
-    }
 }

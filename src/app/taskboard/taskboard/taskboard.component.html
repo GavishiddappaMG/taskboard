@@ -1,17 +1,78 @@
 <div class="task-list-wrapper">
   <div>
-    <app-task-list [taskTitle]="'BACKLOG'"></app-task-list>
+    <div class="task-list">
+      <div class="task-list-container">
+        <div class="task-header">
+          <p>Backlog</p>
+        </div>
+        <div cdkDropList #backlog1List="cdkDropList" [cdkDropListData]="backlog1" [cdkDropListConnectedTo]="[todoList, inProcessList, backlog2List, completedList]"
+          class="drop-list" (cdkDropListDropped)="drop($event)">
+          <div class="list-box" *ngFor="let item of backlog1" cdkDrag>
+            <app-card [title]="item.title" [flag]="item.flag" [status]="item.status" [description]="item.description"></app-card>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div>
-    <app-task-list [taskTitle]="'TODO'"></app-task-list>
+    <div class="task-list">
+      <div class="task-list-container">
+        <div class="task-header">
+          <p>Todo</p>
+        </div>
+        <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todo" [cdkDropListConnectedTo]="[backlog1List, inProcessList, backlog2List, completedList]"
+          class="drop-list" (cdkDropListDropped)="drop($event)">
+          <div class="list-box" *ngFor="let item of todo" cdkDrag>
+            <app-card [title]="item.title" [flag]="item.flag" [status]="item.status" [description]="item.description"></app-card>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div>
-    <app-task-list [taskTitle]="'IN PROCESS'"></app-task-list>
+    <div class="task-list">
+      <div class="task-list-container">
+        <div class="task-header">
+          <p>In Process</p>
+        </div>
+        <div cdkDropList #inProcessList="cdkDropList" [cdkDropListData]="inProcess" [cdkDropListConnectedTo]="[todoList, backlog1List, backlog2List, completedList]"
+          class="drop-list" (cdkDropListDropped)="drop($event)">
+          <div class="list-box" *ngFor="let item of inProcess" cdkDrag>
+            <app-card [title]="item.title" [flag]="item.flag" [status]="item.status" [description]="item.description"></app-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="task-list">
+      <div class="task-list-container">
+        <div class="task-header">
+          <p>Backlog</p>
+        </div>
+        <div cdkDropList #backlog2List="cdkDropList" [cdkDropListData]="backlog2" [cdkDropListConnectedTo]="[todoList, backlog1List, inProcessList, completedList]"
+          class="drop-list" (cdkDropListDropped)="drop($event)">
+          <div class="list-box" *ngFor="let item of backlog2" cdkDrag>
+            <app-card [title]="item.title" [flag]="item.flag" [status]="item.status" [description]="item.description"></app-card>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div>
-    <app-task-list [taskTitle]="'BACKLOG'"></app-task-list>
-  </div>
-  <div>
-    <app-task-list [taskTitle]="'COMPLETE'"></app-task-list>
+    <div class="task-list">
+      <div class="task-list-container">
+        <div class="task-header">
+          <p>Completed</p>
+        </div>
+        <div cdkDropList #completedList="cdkDropList" [cdkDropListData]="completed" [cdkDropListConnectedTo]="[todoList, backlog1List, inProcessList, backlog2List]"
+          class="drop-list" (cdkDropListDropped)="drop($event)">
+          <div class="list-box" *ngFor="let item of completed" cdkDrag>
+            <app-card [title]="item.title" [flag]="item.flag" [status]="item.status" [description]="item.description"></app-card>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

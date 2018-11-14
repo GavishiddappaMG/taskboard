@@ -1,4 +1,5 @@
-<div class="card">
+<div class="card" [ngClass]="status">
+  <mat-icon *ngIf="flag">bookmark</mat-icon>
   <div class="card-title">{{title}}</div>
   <div class="card-body">{{description}}</div>
 </div>

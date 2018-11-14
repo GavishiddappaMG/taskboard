@@ -8,10 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TaskListComponent implements OnInit {
 
   @Input() taskTitle: string;
+  @Input() tasks: Array<{ title: string, description: string }>;
+
 
   constructor() { }
 
   ngOnInit() {
   }
+
+
 
 }

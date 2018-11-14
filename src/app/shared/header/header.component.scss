@@ -1,0 +1,45 @@
+@import '../../../sass/variables';
+
+.app-header {
+  background-color: $white;
+  height: 56px;
+
+  .navbar {
+    background-color: $white;
+
+    .form-input {
+      border: none;
+      background: #fafafa;
+      height: 40px;
+      vertical-align: middle;
+      border-radius: 0.5rem;
+      width: 300px;
+      outline: none;
+      border: 1px solid #f1f1f1;
+    }
+  }
+
+  mat-icon,
+  span {
+    vertical-align: middle;
+  }
+  span {
+    margin-left: 1rem;
+    font-size: $font-size-base;
+    color: #313131;
+  }
+  .user-details {
+    mat-icon {
+      margin-right: 1rem;
+      padding-top: 5px;
+    }
+  }
+  .user-image {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #e1e1e1
+  }
+
+}

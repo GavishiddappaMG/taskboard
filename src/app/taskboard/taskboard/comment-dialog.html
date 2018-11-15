@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+  <mat-dialog-content [formGroup]="modalForm">
+    <mat-form-field style="width:400px !important">
+      <input matInput placeholder="Put you comments here" formControlName="comment">
+    </mat-form-field>
+  </mat-dialog-content>
+</div>
+<div mat-dialog-actions>
+  <span class="space"></span>
+  <button mat-button (click)="close()">No Thanks</button>
+  <button mat-button mat-primary (click)="save()">Ok</button>
+</div>

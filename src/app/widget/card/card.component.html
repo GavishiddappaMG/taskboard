@@ -1,5 +1,5 @@
 <div class="card status">
-  <mat-icon *ngIf="flag" [ngStyle]="{'color': color}">bookmark</mat-icon>
+  <mat-icon *ngIf="flag" (click)="navigate()" [ngStyle]="{'color': color}">bookmark</mat-icon>
   <div class="card-title">{{title}}</div>
   <div class="card-body">{{description}}</div>
 </div>

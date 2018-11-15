@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <h1>Comment List</h1>
+  <mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let comment of comments">
+      <strong>{{comment.title + ' ' }}</strong> {{ ' ----> ' +comment.comment + ' ----> ' + comment.time}}
+    </mat-list-item>
+  </mat-list>
+</div>
